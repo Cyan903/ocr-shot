@@ -22,7 +22,7 @@ if [[ "$(echo "$res" | jq .status)" -ne 200 ]]; then
     exit 1
 fi
 
-if ! echo "$res" | jq .message | xclip -selection c; then
+if ! echo "$res" | jq -r .message | xclip -selection c; then
     notify-send "ocr-shot" "Failed to copy message"
     exit 1
 fi
