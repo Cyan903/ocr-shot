@@ -19,7 +19,9 @@ $ curl --request POST \
 $ ./src/client.sh
 ```
 
-## Installation
+## Setup
+
+Setup with `docker`.
 
 ```sh
 $ cp .env.example .env

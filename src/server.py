@@ -9,7 +9,6 @@ mocr = MangaOcr()
 
 DIR = "/tmp/"
 
-
 @app.route("/", methods = ["GET", "POST"])
 def ocr():
     if request.method == "GET":
